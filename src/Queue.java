@@ -14,11 +14,12 @@ public class Queue <T>{
     /**
      * Adds an element to the queue
      */
-    void Enqueue(T element){
+    void enqueue(T element){
         QueueNode<T> node = new QueueNode<>(element);
         if(size == 0) first = node;
         else last.setNext(node);
         last = node;
+        size++;
     }
 
     /**
@@ -28,6 +29,7 @@ public class Queue <T>{
     T dequeue(){
         T returnVal = first.getData();
         first = first.getNext();
+        size = Math.max(0, size-1);
         return returnVal;
     }
 
