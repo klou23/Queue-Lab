@@ -1,3 +1,9 @@
+/**
+ * QueueNode.java
+ * Kevin Lou
+ * 2021/11/30
+ * A class that acts as a Queue Node
+ */
 public class QueueNode <T>{
 
     private T data;

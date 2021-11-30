@@ -1,3 +1,9 @@
+/**
+ * Queue.java
+ * Kevin Lou
+ * 2021/11/30
+ * A queue implementation
+ */
 public class Queue <T>{
 
     QueueNode<T> first;
